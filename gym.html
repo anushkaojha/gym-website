@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anu Fitness Hub</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+ /* CSS Reset */
+ body{
+     font-family: cursive;
+     color: white;
+     margin: 0px;
+     padding: 0px;
+     background: url('img1.jpg');
+     background-size: 1300px;
+ }
+ .left{
+    position: absolute;
+     left: 50px;
+     top: 20px;
+   
+    display: inline-block;
+ }
+ .left img{
+     width: 143px;
+ }
+ .left div{
+     line-height: 19px;
+    font-size: 20px;
+     text-align: center;
+    
+ }
+ .mid{
+     display: block;
+     width: 45%;
+     margin: 20px auto;
+    /* border: 2px solid rgb(207, 19, 19); */
+ }
+ .right{
+     position: absolute;
+     right: 34px;
+     top: 20px;
+     display: inline-block;
+    /* border: 2px solid black; */
+ }
+ .navbar{
+     display: inline-block;
+ }
+.navbar li{
+    display: inline-block;
+    
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 24px;
+}
+.navbar li a:hover, .navbar li a.active{
+    text-decoration: underline;
+    color: rgb(114, 114, 150);
+}
+.btn{
+    margin: 0px 10px;
+    color: white;
+    background-color: black;
+    padding: 4px 14px;
+    border: 2px solid grey;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(59, 46, 46);
+}
+.container{
+    border: 2px solid white;
+    margin: 120px 700px;
+    padding: 80px 74px;
+    width: 33%;
+    border-radius: 10px;
+}
+.formgroup input{
+    font-family: cursive;
+    text-align: center;
+    display: block;
+    width: 400px;
+    padding: 10px;
+    border: 2px solid black;
+    margin: 8px auto;
+    font-size: 18px;
+    border-radius: 18px;
+    color: black;
+}
+.container h1{
+    text-align: center;
+}
+.container button{
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+
+}
+</style>
+<body>
+    <header>
+        <!-- Leftbox for logo -->
+        <div class="left">
+         <img src="img3.jpg" alt="">
+         <div>Anu Fitness Hub</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact us</a></li>
+        </ul>
+        </div>
+        <!-- Right box for buttons -->
+        <div class="right">
+         <button class="btn">Call us Now</button>
+         <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+       <h1>Join the best gym Now</h1>
+       <form action="noaction.php">
+           <div class="formgroup">
+               <input type="text" name="" placeholder="Enter your Name">
+           </div>
+           <div class="formgroup">
+               <input type="text" name="" placeholder="Enter your Age">
+           </div>
+           <div class="formgroup">
+               <input type="text" name="" placeholder="Enter your Gender">
+           </div>
+           <div class="formgroup">
+               <input type="text" name="" placeholder="Enter your Locality">
+           </div>
+           <div class="formgroup">
+               <input type="text" name="" placeholder="Enter your Phone No.">
+           </div>
+           <div class="formgroup">
+               <input type="text" name="" placeholder="Enter your Email ID">
+           </div>
+           <button class="btn">Submit</button>
+       </form>
+    </div>
+</body>
+</html>
